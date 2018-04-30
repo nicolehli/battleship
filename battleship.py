@@ -25,9 +25,10 @@ for turns in range(10):
     if turns == 3:
         print "Game Over"
     else:
+        print ""
+        print print_board(board)
         guess_row = int(raw_input("Guess Row: "))
         guess_col = int(raw_input("Guess Col: "))
-
         if guess_row == ship_row and guess_col == ship_col:
           print "Congratulations! You sank my battleship!"
           break
